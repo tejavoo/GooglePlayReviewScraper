@@ -3,14 +3,21 @@
 APIs to extract reviews from Google Play Store don't work beyond Page 111. This scraper is intended to scrape ALL reviews from an app. It works by automating the human action of scrolling play store reviews (via Selenium) and saving each review visible on the page.
 
 ## A product of &#10084; from 3B for the love of people and of course the internet and digital era
+## A &#11088; would make my day if you fing the script useful
 
-## Installations Required will be added
-- `pip install selenium`
+## Installations Required (more to be added)
+- `pip3 install selenium`
+- `pip3 install matplotlib`
+- `pip3 install requests-testadapter`
+- `pip3 install lxml`
+
 
 
 ## Prerequisites
-- The base directory (from where you are running this code) has chromedriver (if it isn't already installed): http://chromedriver.chromium.org/
-- The json files with individual elements (only reviews, only dates) are saved in a directory called debug. If you want these files, create a directory in the base directory called 'debug' and run the code as is. If not, comment out all the lines where data is being saved to the 'debug' folder.
+- Default to Python >3.5 and pip3
+- Install the chromedriver from http://chromedriver.chromium.org/ and in the scraper.py code point the variable chromedriver to the same
+<!-- - The base directory (from where you are running this code) has chromedriver (if it isn't already installed): http://chromedriver.chromium.org/ -->
+- The json files with individual elements (only reviews, only dates) are saved in a directory called data_folder. If you want these files, create a directory in the base directory called 'debug' and run the code as is. If not, comment out all the lines where data is being saved to the 'debug' folder.
 
 ## Running 
 - scraper.py is the primary scraper. If you have a stable Internet connection with minimal interruptions, this would be the only code you would have to run. 
@@ -29,6 +36,6 @@ APIs to extract reviews from Google Play Store don't work beyond Page 111. This 
  -->
 
 # TO-DO
-[x] scraper
-[ ] add restart from last stop
-[ ] add multi threading if possible
+- [x] scraper
+- [ ] add restart from last stop
+- [ ] add multi threading if possible
