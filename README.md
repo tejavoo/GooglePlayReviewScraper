@@ -3,7 +3,7 @@
 APIs to extract reviews from Google Play Store don't work beyond Page 111. This scraper is intended to scrape ALL reviews from an app. It works by automating the human action of scrolling play store reviews (via Selenium) and saving each review visible on the page.
 
 ## A product of &#10084; from 3B for the love of people and of course the internet and digital era
-## A &#11088; would make my day if you fing the script useful
+## A &#11088; would make my day if you find the script useful
 
 ## Installations Required (more to be added)
 - `pip3 install selenium`
