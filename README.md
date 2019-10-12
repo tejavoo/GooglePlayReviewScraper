@@ -20,6 +20,8 @@ APIs to extract reviews from Google Play Store don't work beyond Page 111. This 
 - The json files with individual elements (only reviews, only dates) are saved in a directory called data_folder. If you want these files, create a directory in the base directory called 'data_folder' and run the code as is. __If not__, comment out all the lines where data is being saved to the 'data_folder' folder.
 
 ## Running 
+- If you **want** clutter the you can comment the line `options.add_argument('headless')` and you can now successfully clutter your desktop
+with the browser i.e., if you leave the code be the same then the browser won't be seen and also progress seen only in the terminal
 - scraper.py is the primary scraper. If you have a stable Internet connection with minimal interruptions, this would be the only code you would have to run. 
 - Enter the APP_ID and appname in scraper.py and execute script. The url and session_id will be printed on the console. Copy these values in scraper_open_browser.py 
 - The scraper should run and save data in the base folder.
