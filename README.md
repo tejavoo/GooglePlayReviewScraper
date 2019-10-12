@@ -3,7 +3,7 @@
 APIs to extract reviews from Google Play Store don't work beyond Page 111. This scraper is intended to scrape ALL reviews from an app. It works by automating the human action of scrolling play store reviews (via Selenium) and saving each review visible on the page.
 
 ## A product of &#10084; from 3B for the love of people and of course the internet and digital era
-## A &#11088; would make my day if you find the script useful
+### A &#11088; would make my day if you find the script useful
 
 ## Installations Required (more to be added)
 - `pip3 install selenium`
@@ -17,14 +17,14 @@ APIs to extract reviews from Google Play Store don't work beyond Page 111. This 
 - Default to Python >3.5 and pip3
 - Install the chromedriver from http://chromedriver.chromium.org/ and in the scraper.py code point the variable chromedriver to the same
 <!-- - The base directory (from where you are running this code) has chromedriver (if it isn't already installed): http://chromedriver.chromium.org/ -->
-- The json files with individual elements (only reviews, only dates) are saved in a directory called data_folder. If you want these files, create a directory in the base directory called 'debug' and run the code as is. If not, comment out all the lines where data is being saved to the 'debug' folder.
+- The json files with individual elements (only reviews, only dates) are saved in a directory called data_folder. If you want these files, create a directory in the base directory called 'data_folder' and run the code as is. __If not__, comment out all the lines where data is being saved to the 'data_folder' folder.
 
 ## Running 
 - scraper.py is the primary scraper. If you have a stable Internet connection with minimal interruptions, this would be the only code you would have to run. 
 - Enter the APP_ID and appname in scraper.py and execute script. The url and session_id will be printed on the console. Copy these values in scraper_open_browser.py 
 - The scraper should run and save data in the base folder.
-- In case the code is interrupted due to an error (usually because of connectivity loss), change the counter (k) in scraper_open_browser.py to the last review that was saved by the scraper. Ensure that the driver_id and url is that of the window created by scraper.py. Run scraper_open_browser.py
-- Every time the code is interrupted because of an error, repeat previous step (change 'k' to the last review saved by scraper.py or scarper_open_browser.py)
+- (Yet to be implemented) ~~In case the code is interrupted due to an error (usually because of connectivity loss), change the counter (k) in scraper_open_browser.py to the last review that was saved by the scraper. Ensure that the driver_id and url is that of the window created by scraper.py. Run scraper_open_browser.py~~
+- (Yet to be implemented) ~~Every time the code is interrupted because of an error, repeat previous step (change 'k' to the last review saved by scraper.py or scarper_open_browser.py)~~
 
 <!-- ## Some Observations from My Experience running it:
   - Depending on the number of reviews, scrolling to the earliest review can take over two days. 
@@ -37,5 +37,6 @@ APIs to extract reviews from Google Play Store don't work beyond Page 111. This 
 
 # TO-DO
 - [x] scraper
+- [ ] add interrupt to clean stop post iteration
 - [ ] add restart from last stop
 - [ ] add multi threading if possible
